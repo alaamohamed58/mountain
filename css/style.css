@@ -170,12 +170,12 @@ header .container::after{
 header .container::before{
     left: -30px;
     border-left: 30px solid transparent;
-    border-top: 100px solid rgba(0,0,0,0.80);
+    border-top: 128px solid rgba(0,0,0,0.80);
 }
 header .container::after{
     right: -30px;
     border-right: 30px solid transparent;
-    border-top: 100px solid rgba(0,0,0,0.80);
+    border-top: 128px solid rgba(0,0,0,0.80);
 }
 header .container .logo{
     width: 126px;
