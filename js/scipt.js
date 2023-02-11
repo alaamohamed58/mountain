@@ -114,7 +114,6 @@ function slider(dir) {
 // choose
 var switcherlist = document.querySelectorAll(".switcher li");
 var imglist = Array.from(document.querySelectorAll(".specilization .content"));
-console.log(imglist);
 
 switcherlist.forEach((li) => {
   li.addEventListener("click", removeActive);

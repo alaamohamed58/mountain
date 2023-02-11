@@ -9,8 +9,8 @@ function sendMail() {
   }
   const params = {
     from_name: name,
-    client_phone: phone,
-    client_message: message,
+    phone_number: phone,
+    message: message,
   };
 
   //loading
@@ -21,7 +21,7 @@ function sendMail() {
   contactForm.appendChild(paragraph);
 
   emailjs
-    .send("service_8kwjvz9", "template_gijdm8e", params)
+    .send("service_2nthapo", "template_so2ue8d", params)
     .then(function (res) {
       submitBtn.style.display = "block";
       document.forms[0].reset();
