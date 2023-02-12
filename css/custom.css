@@ -457,9 +457,9 @@ header.active{
   header .container nav .toggle span:nth-child(2){
     width: 50% !important;
   }
-  header .container .toggle + a + ul{
+  /* header .container .toggle + a + ul{
     transform: scaleY(0) !important;
-  }
+  } */
   header .container .toggle.active + a + ul{
     transform: scaleY(1) !important;
   }

@@ -1,3 +1,17 @@
+const header = document.querySelector("header"),
+  links = Array.from(document.querySelectorAll("#links li"));
+/*    UTILS      */
+
+links.forEach((li) => {
+  li.addEventListener("click", removeActiveLinks);
+});
+function removeActiveLinks() {
+  links.forEach((li) => {
+    li.classList.remove("active");
+    this.classList.add("active");
+    header.querySelector("nav ul").classList.remove("active");
+  });
+}
 window.onscroll = function () {
   if (window.scrollY === 0) {
     document.querySelector("header").classList.remove("active");
@@ -15,8 +29,10 @@ function scrollto(id, n) {
   window.scrollTo(0, document.querySelector(id).offsetTop - 68 + sn);
 }
 
-document.querySelector("header .container nav .toggle").onclick = function () {
-  this.classList.toggle("active");
+header.querySelector(".container nav .toggle").onclick = function () {
+  document.querySelector("header nav ul").classList.toggle("active");
+  // console.log(document.querySelector("header nav ul"));
+  // console.log("HELLO");
 };
 
 function hide(d) {

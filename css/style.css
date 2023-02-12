@@ -249,6 +249,12 @@ header .container nav ul li a {
   transition: var(--transition);
   position: relative;
 }
+header .container nav ul li.active:not(.about) a{
+  color: orange; 
+}
+header .container nav ul li.about {
+  padding: 10px;
+}
 header .container nav ul li a:not(li.about ul a):before {
   content: "";
   position: absolute;
@@ -306,14 +312,16 @@ header .container nav ul li.about ul li:hover {
 @media (max-width: 770px) {
   header .container nav ul:not(li.about ul) {
     position: absolute;
-    display: block;
+    display: none;
     top: 100%;
-    background-color: var(--main-color);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     right: 0;
-    transform: scaleY(0);
     transition: var(--transition);
     transform-origin: left top;
+  }
+  header .container nav ul.active:not(li.about ul){
+    display: block !important;
   }
   header .container nav {
     order: -1;
@@ -335,6 +343,7 @@ header .container nav ul li.about ul li:hover {
   }
   header .container nav ul li a {
     font-size: 15px;
+    color: white;
   }
   header .container a[type="phone"] {
     margin-right: 10px;
@@ -342,16 +351,16 @@ header .container nav ul li.about ul li:hover {
   header .container select {
     order: 0;
   }
-  header .container nav ul li a:not(li.about ul a) {
+  /* header .container nav ul li a:not(li.about ul a) {
     color: unset;
-  }
+  } */
   header .container nav ul li.about ul li:hover {
     background-color: unset !important;
   }
-  header .container nav ul li a:hover,
+  /* header .container nav ul li a:hover,
   header .container nav ul li.about ul li a:hover {
     color: unset;
-  }
+  } */
   header .container nav ul li a::before {
     display: none;
   }
@@ -551,6 +560,12 @@ header .container nav ul li.about ul li:hover {
   justify-content: center;
   margin-bottom: 50px;
   color: #fff;
+}
+@media(max-width:767px) {
+  .specilization ul {
+    display: block;
+ 
+  }
 }
 .specilization ul li {
   padding: 8px;
