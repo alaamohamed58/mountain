@@ -79,7 +79,7 @@ function ering(t, suc) {
       .classList.remove("suc");
   }
 
-  var timeOUT = setTimeout(() => {
+  const timeOUT = setTimeout(() => {
     document
       .querySelector(".contact .container .one form p")
       .classList.remove("showen");
@@ -91,7 +91,7 @@ function ering(t, suc) {
 }
 
 // SLIDER
-var val,
+let val,
   isPause = false;
 function slider(dir) {
   var showen = document.querySelector(".landing > img.showen"),
@@ -128,8 +128,10 @@ function slider(dir) {
 }
 
 // choose
-var switcherlist = document.querySelectorAll(".switcher li");
-var imglist = Array.from(document.querySelectorAll(".specilization .content"));
+const switcherlist = document.querySelectorAll(".switcher li");
+const imglist = Array.from(
+  document.querySelectorAll(".specilization .content")
+);
 
 switcherlist.forEach((li) => {
   li.addEventListener("click", removeActive);
