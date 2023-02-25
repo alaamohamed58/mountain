@@ -656,14 +656,14 @@ header .container nav ul li.about ul li:hover {
   background-color: #ea4335;
 }
 /*start partner*/
-.partners {
+.splide {
   padding: var(--padding);
 }
-.partners h2 {
+.splide h2 {
   text-align: center;
-  margin: 50px 0;
+  margin: 20px 0;
 }
-.partners h2 i {
+.splide h2 i {
   color: var(--secondary-color);
 }
 /* .partners .box > div:first-of-type {
