@@ -545,6 +545,7 @@ header .container nav ul li.about ul li:hover {
   }
   .specilization .box .content {
     width: 100%;
+    margin-right: 0;
   }
   .specilization .box.active .content {
     flex-basis: 100%;
