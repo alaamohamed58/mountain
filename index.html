@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
-    <meta
-      name="description"
-      content="mountain for construction and project management"
-    />
-    <meta name="copyright" content="mountain-eg" />
-    <link rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+<html lang="ar">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no"
+  />
+  <meta
+    name="description"
+    content="mountain for construction and project management"
+  />
+  <meta name="copyright" content="mountain-eg" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@splidejs/splide@3.0.7/dist/css/splide.min.css"
+  />
+  <link rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("amwzrqJgjrEPhX1k2");
-      })();
-    </script>
-    <script type="text/javascript"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("amwzrqJgjrEPhX1k2");
+    })();
+  </script>
 
-    <title>Mountain</title>
-  </head>
-
+  <title>Mountain</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@splidejs/splide@3.0.7/dist/css/splide.min.css"
+  />
+  <style>
+    .splide__list li {
+      overflow: hidden;
+    }
+    li img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
   <body>
-    <!--start header-->
-    <header>
+    <header  dir="rtl">
       <div class="container">
         <!-- <select class="lang">
                 <option value="Arabic">العربية</option>
@@ -77,7 +90,7 @@
                 <li><a onclick="scrollto('#team')">تعرف علي فريق العمل</a></li>
               </ul>
             </li>
-            <li><a onclick="scrollto('#partners')">شركاؤنا </a></li>
+            <li><a onclick="scrollto('#splide')">شركاؤنا </a></li>
             <li><a onclick="scrollto('#send')">راسلنا </a></li>
             <li><a onclick="scrollto('.location')">موقعنا </a></li>
             <li><a onclick="scrollto('.footer')">مواعيد العمل </a></li>
@@ -90,7 +103,6 @@
         </nav>
       </div>
     </header>
-    <!--start landing-->
     <div class="landing">
       <p></p>
       <img src="slider/slide-1.jpg" class="showen" alt="SLIDER IMAGES" />
@@ -104,267 +116,298 @@
       <i onclick="slider('to')" class="fa fa-chevron-left to"></i>
       <i onclick="slider('from')" class="fa fa-chevron-right from"></i>
     </div>
-    <!--start services-->
-    <div id="services" class="services">
-      <div class="texts">
-        <h1>أكتشف خدماتنا</h1>
 
-        <a onclick="scrollto('#work', -100)">
-          <i class="fas fa-angle-double-down"></i
-        ></a>
-      </div>
-    </div>
-    <!--start our work-->
-    <div id="work" class="work">
-      <div class="container">
-        <div class="box">
-          <div class="content">
-            <span>
-              <i class="fas fa-building"></i>
-            </span>
-
-            <h3>we can help you with a tender</h3>
-            <p>
-              we have 10 years of experience we will provide a good services for
-              you
-            </p>
-          </div>
-          <div class="content">
-            <span>
-              <i class="fas fa-people-carry"></i>
-            </span>
-
-            <h3>we can help you with a tender</h3>
-            <p>
-              we have 10 years of experience we will provide a good services for
-              you
-            </p>
-          </div>
-          <div class="content">
-            <span>
-              <i class="fas fa-laptop-house"></i>
-            </span>
-
-            <h3>we can help you with a tender</h3>
-            <p>
-              we have 10 years of experience we will provide a good services for
-              you
-            </p>
-          </div>
-          <div class="content">
-            <span>
-              <i class="fas fa-hands-helping"></i>
-            </span>
-
-            <h3>we can help you with a tender</h3>
-            <p>
-              we have 10 years of experience we will provide a good services for
-              you
-            </p>
+        <!--start services-->
+        <div id="services" class="services">
+          <div class="texts">
+            <h1>أكتشف خدماتنا</h1>
+    
+            <a onclick="scrollto('#work', -100)">
+              <i class="fas fa-angle-double-down"></i
+            ></a>
           </div>
         </div>
-      </div>
-    </div>
-    <!--start gallery-->
-    <div id="projects" class="specilization">
-      <div class="container">
-        <h2 class="main-text" data="مشروعات">أخر المشروعات</h2>
-        <ul class="switcher">
-          <li class="active" data-work=".all">الكل</li>
-          <li data-work=".theaters">حفلات</li>
-          <li data-work=".restaurants">مطاعم</li>
-          <li data-work=".festivals">أفراح</li>
-          <li data-work=".hospitals">مستشفيات</li>
-          <li data-work=".ghona">مهرجان الجونة</li>
-        </ul>
-
-        <div class="box">
-          <div class="content all restaurants">
-            <img
-              src="images/restaurants/beef bar/beefbar-egypt-night-uai-516x386.jpg"
-              alt="beef-bar"
-            />
-          </div>
-
-          <div class="content all restaurants">
-            <img
-              src="images/restaurants/beef bar/Beefbar-Egypt_Archi-uai-1032x773.jpg"
-              alt="beef-bar"
-            />
-          </div>
-          <div class="content all restaurants">
-            <img src="images/restaurants/grecco.jpg" alt="beef-bar" />
-          </div>
-
-          <div class="content all restaurants">
-            <img
-              src="images/restaurants/mariolino/mariolino.jpeg"
-              alt="beef-bar"
-            />
-          </div>
-          <div class="content all restaurants">
-            <img
-              src="images/restaurants/mariolino/mariolinwo.jpeg"
-              alt="beef-bar"
-            />
-          </div>
-          <div class="content all restaurants">
-            <img src="images/restaurants/scalini/1.gif" alt="beef-bar" />
-          </div>
-          <div class="content all restaurants">
-            <img src="images/restaurants/scalini/4.gif" alt="beef-bar" />
-          </div>
-
-          <div class="content all restaurants">
-            <img src="images/restaurants/scalini/scalini.gif" alt="beef-bar" />
-          </div>
-
-          <div class="content all theaters">
-            <img src="images/theaters/AHM Sahel.png" alt="" />
-          </div>
-
-          <div class="content all villa">
-            <img src="images/villas/villa1.jpg" alt="" />
-          </div>
-
-          <div class="content all villa">
-            <img src="images/villas/villa2.jpg" alt="" />
-          </div>
-          <div class="content all villa">
-            <img src="images/villas/villa3.jpg" alt="" />
-          </div>
-
-          <div class="modal">
-            <div><img class="madal-content" /></div>
-            <span class="close">&times;</span>
-          </div>
-        </div>
-        <button>عرض الكل</button>
-      </div>
-    </div>
-    <!--start about us-->
-    <div id="about-company" class="about-company">
-      <div class="container">
-        <h2>من نحن ؟</h2>
-        <div class="text">
-          <p>
-            تهدف الشركة لتكون الرائدة في مجال التشطيبات والخدمات الصناعية
-            والمقاولات الكهروميكانيكية والإنشاءات المعدنية
-          </p>
-        </div>
-        <div class="logo">
-          <img src="images/logo/logo_2-removebg-preview.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <!--start our team-->
-    <div id="team" class="team">
-      <div class="container">
-        <h2 class="main-text" data="الفريق">فريق العمل</h2>
-        <div class="box">
-          <div class="content">
-            <div class="img-content">
-              <img
-                src="images/real/general-manager.jpeg"
-                alt="mountain-manager"
-              />
-            </div>
-            <div class="texts">
-              <span>Director-General</span>
-              <h3>م/ مصطفي السمان</h3>
-            </div>
-            <div class="icons">
-              <a href="https://www.facebook.com/" target="_blank"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a type="email" href="mailto:alsaman@mountain-eg.com">
-                <i class="fab fa-google"></i
-              ></a>
+        <!--start our work-->
+        <div id="work" class="work"  dir="rtl">
+          <div class="container">
+            <div class="box">
+              <div class="content">
+                <span>
+                  <i class="fas fa-building"></i>
+                </span>
+    
+                <h3>خدمات البناء السكنية</h3>
+                <p>
+                  بناء منزل جديد
+                  بناء منزل مخصص
+                  تجديد المنزل وإعادة البناء
+                  المنزل بالإضافة إلى البناء
+                  الدهانات الخارجية والداخلية
+                  تركيب الأسقف والانحياز
+                </p>
+              </div>
+              <div class="content">
+                <span>
+                  <i class="fas fa-people-carry"></i>
+                </span>
+    
+                <h3>خدمات البناء التجارية:
+                </h3>
+                <p>
+                  تشييد مباني المكاتب
+                  بناء متجر بيع بالتجزئة
+                  بناء مطعم
+                  بناء فندق
+                  التجديد التجاري وإعادة البناء
+                </p>
+              </div>
+              <div class="content">
+                <span>
+                  <i class="fas fa-laptop-house"></i>
+                </span>
+    
+                <h3>خدمات تنسيق الحدائق:
+                </h3>
+                <p>
+                  تصميم وتركيب المناظر الطبيعية
+                  تركيب نظام الري
+                  صيانة ورعاية العشب
+                </p>
+              </div>
+              <div class="content">
+                <span>
+                  <i class="fas fa-hands-helping"></i>
+                </span>
+    
+                <h3>فوائد العمل مع شركتنا:
+                </h3>
+                <p>
+                  المهنيين ذوي الخبرة والمؤهلين
+                  صنعة عالية الجودة
+                  تسليم المشاريع في الوقت المناسب
+                  أسعار تنافسية
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!--start partners-->
-    <div class="partners" id="partners">
-      <div class="container">
-        <h2>شركاؤنا في النجاح <i class="far fa-handshake"></i></h2>
-        <div class="box slider">
-          <div class="slide-track">
-            <!-- first 6 slide -->
-
-            <div class="slide">
-              <img src="images/partners/saudi-german.png" alt="" />
+        <!--start gallery-->
+        <div id="projects" class="specilization">
+          <div class="container">
+            <h2 class="main-text" data="مشروعات">أخر المشروعات</h2>
+            <ul class="switcher">
+              <li class="active" data-work=".all">الكل</li>
+              <li data-work=".theaters">حفلات</li>
+              <li data-work=".restaurants">مطاعم</li>
+              <li data-work=".festivals">أفراح</li>
+              <li data-work=".hospitals">مستشفيات</li>
+              <li data-work=".ghona">مهرجان الجونة</li>
+            </ul>
+    
+            <div class="box">
+              <div class="content all restaurants">
+                <img
+                  src="images/restaurants/beef bar/beefbar-egypt-night-uai-516x386.jpg"
+                  alt="beef-bar"
+                />
+              </div>
+    
+              <div class="content all restaurants">
+                <img
+                  src="images/restaurants/beef bar/Beefbar-Egypt_Archi-uai-1032x773.jpg"
+                  alt="beef-bar"
+                />
+              </div>
+              <div class="content all restaurants">
+                <img src="images/restaurants/grecco.jpg" alt="beef-bar" />
+              </div>
+    
+              <div class="content all restaurants">
+                <img
+                  src="images/restaurants/mariolino/mariolino.jpeg"
+                  alt="beef-bar"
+                />
+              </div>
+              <div class="content all restaurants">
+                <img
+                  src="images/restaurants/mariolino/mariolinwo.jpeg"
+                  alt="beef-bar"
+                />
+              </div>
+              <div class="content all restaurants">
+                <img src="images/restaurants/scalini/1.gif" alt="beef-bar" />
+              </div>
+              <div class="content all restaurants">
+                <img src="images/restaurants/scalini/4.gif" alt="beef-bar" />
+              </div>
+    
+              <div class="content all restaurants">
+                <img src="images/restaurants/scalini/scalini.gif" alt="beef-bar" />
+              </div>
+    
+              <div class="content all theaters">
+                <img src="images/theaters/AHM Sahel.png" alt="" />
+              </div>
+    
+              <div class="content all villa">
+                <img src="images/villas/villa1.jpg" alt="" />
+              </div>
+    
+              <div class="content all villa">
+                <img src="images/villas/villa2.jpg" alt="" />
+              </div>
+              <div class="content all villa">
+                <img src="images/villas/villa3.jpg" alt="" />
+              </div>
+    
+              <div class="modal">
+                <div><img class="madal-content" /></div>
+                <span class="close">&times;</span>
+              </div>
             </div>
-            <div class="slide">
-              <img src="images/partners/ahly-sabour.jpg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/partners/brgr.png" alt="" />
-            </div>
-
-            <div class="slide">
-              <img src="images/partners/tourbay.jpeg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/partners/orascom.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/partners/ahm_club.jpg" alt="" />
-            </div>
-
-            <!-- second 6 slide  -->
-
-            <div class="slide">
-              <img src="images/partners/ecg.jpg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/partners/scalini.jpg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/partners/pus.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/partners/seashell_playa.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/partners/otto.jpg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/partners/beefbar.png" alt="" />
-            </div>
-            <!-- <div class="slide">
-              <img src="images/partners/243323_LA7-page-a-d-.jpg" alt="" />
-            </div> -->
+            <button>عرض الكل</button>
           </div>
         </div>
-      </div>
-    </div>
-    <!--start contact-->
-    <div id="send" class="contact">
-      <div class="container">
-        <div class="col one">
-          <h2>يمكننا استقبال اسألتك و سوف نجيب في اقرب وقت</h2>
-
-          <form>
-            <input id="client_name" type="text" required placeholder="الأسم" />
-            <input
-              id="client_number"
-              type="number"
-              required
-              placeholder=" رقم الهاتف"
-            />
-            <textarea
-              id="client_msg"
-              style="resize: none"
-              placeholder="رسالتك"
-              required
-            ></textarea>
-            <button type="submit">ارسال</button>
-          </form>
+        <!--start about us-->
+        <div id="about-company" class="about-company">
+          <div class="container" dir="rtl">
+            <h2>من نحن ؟</h2>
+            <div class="text">
+              <p>
+                تهدف الشركة لتكون الرائدة في مجال التشطيبات والخدمات الصناعية
+                والمقاولات الكهروميكانيكية والإنشاءات المعدنية
+              </p>
+            </div>
+            <div class="logo">
+              <img src="images/logo/logo_2-removebg-preview.png" alt="" />
+            </div>
+          </div>
         </div>
-      </div>
+        <!--start our team-->
+        <div id="team" class="team">
+          <div class="container">
+            <h2 class="main-text" data="الفريق">فريق العمل</h2>
+            <div class="box">
+              <div class="content">
+                <p>يتمتع محترفو البناء لدينا بسنوات من الخبرة في الصناعة ومعتمدون ومرخصون. يضم فريقنا مهندسين معماريين ومهندسين ومديري مشاريع وحرفيين مهرة ملتزمين بتقديم أعمال عالية الجودة في كل مشروع.</p>
+                <div class="img-content">
+                  <img
+                    src="images/real/general-manager.jpeg"
+                    alt="mountain-manager"
+                  />
+                </div>
+                <div class="texts">
+                  <span>Director-General</span>
+                  <h3>م/ مصطفي السمان</h3>
+                </div>
+                <div class="icons">
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a type="email" href="mailto:alsaman@mountain-eg.com">
+                    <i class="fab fa-google"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="splide" class="splide">
+          <h2>شركاؤنا في النجاح <i class="far fa-handshake"></i></h2>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="/images/partners/243323_LA7-page-a-d-.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/ahly-sabour.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/ahm_club.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/alchemy.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/Aramex_logo_0.svg" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/beanos.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/beefbar.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/brgr.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/eatry.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/ecg.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/gigi.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/grecco.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/HM CLUB.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/orascom.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/otto.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/pus.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/saudi-german.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/scalini.jpg" />
+              </li>   <li class="splide__slide">
+                <img src="/images/partners/seashell.jpg" />
+              </li>   <li class="splide__slide">
+                <img src="/images/partners/seashell_playa.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/tourbay.jpeg" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/partners/venture.png" />
+              </li>
+            </ul>
+          </div>
+        </div>
+ <!--start contact-->
+ <div id="send" class="contact">
+  <div class="container">
+    <div class="col one">
+      <h2>يمكننا استقبال اسألتك و سوف نجيب في اقرب وقت</h2>
+
+      <form  dir="rtl">
+        <input id="client_name" type="text" required placeholder="الأسم" />
+        <input
+          id="client_number"
+          type="number"
+          required
+          placeholder=" رقم الهاتف"
+        />
+        <textarea
+          id="client_msg"
+          style="resize: none"
+          placeholder="رسالتك"
+          required
+        ></textarea>
+        <button type="submit">ارسال</button>
+      </form>
     </div>
+  </div>
+</div>
     <div class="location">
       <div class="container">
         <div class="text">
@@ -453,16 +496,21 @@
       <div onclick="hide(this.parentElement)"></div>
       <img src="images/intrl117_View08-copy.jpg" alt="" />
     </div>
-    <script src="js/scipt.js"></script>
-    <script src="js/email.js"></script>
+    <script src="https://unpkg.com/@splidejs/splide@3.0.7/dist/js/splide.min.js"></script>
     <script>
-      val = setInterval(() => {
-        if (isPause) {
-          return false;
-        }
+      const splide = new Splide(".splide", {
+        type: "loop",
+        drag: "free",
+        focus: "center",
+        perPage: 5,
+        pagination: false,
+        autoplay: true, // To enable the autoplay feature
+        interval: 2000, // To
+      });
 
-        slider();
-      }, 4000);
+      splide.mount();
     </script>
+      <script src="js/scipt.js"></script>
+      <script src="js/email.js"></script>
   </body>
 </html>

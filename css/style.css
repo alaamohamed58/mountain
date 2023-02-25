@@ -614,7 +614,9 @@ header .container nav ul li.about ul li:hover {
 .team .container .box .content {
   text-align: center;
 }
-
+.team .container .box .content p {
+  padding: 15px 0;
+}
 .team .container .box .content .img-content {
   width: 320px;
   margin: 0 auto;
@@ -1003,34 +1005,12 @@ header .container nav ul li.about ul li:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(250px * 12); */
+  gap: 10px;
+
 }
-.slider .slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
+.splide__slide li{
+  width : 150px
 }
-.slider .slide:hover{
-  transform: scale(1.1);
-  font-size: 30px;
-  background-color: rgba(255, 255, 255, 0.7);
+ img {
+  width : 100%;
 }
-.slider .slide img {
-  width: 100%;
-}
-/* .slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 15%;
-  z-index: 2;
-} */
