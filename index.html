@@ -105,8 +105,9 @@
     </header>
     <div class="landing">
       <p></p>
-      <img src="slider/slide-1.jpg" class="showen" alt="SLIDER IMAGES" />
-      <img src="slider/slide-2.jpg" alt="SLIDER IMAGES" />
+      <img src="/images/restaurants/beef bar/Beefbar-Egypt_Archi-uai-1032x773.jpg" class="showen" alt="beef-bar" />
+      <img src="/images/restaurants/brgr/brgr.jpeg" class="showen" alt="brgr" />
+      <img src="/images/restaurants/GIGI/S_MG_1174-HDR-f6d17453-b19e-4226-9e7d-2bce11de9618.jpeg" class="showen" alt="gigi" />
 
       <div class="texts">
         <h1><span>M</span>ountain</h1>
@@ -531,6 +532,13 @@
     </div>
     <script src="https://unpkg.com/@splidejs/splide@3.0.7/dist/js/splide.min.js"></script>
     <script>
+      val = setInterval(() => {
+            if (isPause) {
+                return false;
+            }
+    
+            slider();
+        }, 2500);
       const splide = new Splide(".splide", {
         type: "loop",
         drag: "free",
