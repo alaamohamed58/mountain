@@ -249,8 +249,8 @@ header .container nav ul li a {
   transition: var(--transition);
   position: relative;
 }
-header .container nav ul li.active:not(.about) a{
-  color: orange; 
+header .container nav ul li.active:not(.about) a {
+  color: orange;
 }
 header .container nav ul li.about {
   padding: 10px;
@@ -320,7 +320,7 @@ header .container nav ul li.about ul li:hover {
     transition: var(--transition);
     transform-origin: left top;
   }
-  header .container nav ul.active:not(li.about ul){
+  header .container nav ul.active:not(li.about ul) {
     display: block !important;
   }
   header .container nav {
@@ -515,7 +515,7 @@ header .container nav ul li.about ul li:hover {
   z-index: 1111111;
   display: none;
 }
-.modal > div{
+.modal > div {
   width: 80%;
   position: absolute;
   top: 50%;
@@ -523,8 +523,7 @@ header .container nav ul li.about ul li:hover {
   transform: translate(-50%, -50%);
 }
 .madal-content {
-
-  width:100%;
+  width: 100%;
   height: 100%;
   animation: zoom 0.6s;
 }
@@ -566,10 +565,9 @@ header .container nav ul li.about ul li:hover {
   margin-bottom: 50px;
   color: #fff;
 }
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .specilization ul {
     display: block;
- 
   }
 }
 .specilization ul li {
@@ -649,10 +647,10 @@ header .container nav ul li.about ul li:hover {
 .team .container .box .content .icons i:hover {
   transform: scale(1.1);
 }
-.team .container .box .content .icons a:first-child i:hover {
+/* .team .container .box .content .icons a:first-child i:hover {
   background-color: #3b5998;
-}
-.team .container .box .content .icons a:nth-child(2) i:hover {
+} */
+.team .container .box .content .icons a i:hover {
   background-color: #ea4335;
 }
 /*start partner*/
@@ -1006,11 +1004,10 @@ header .container nav ul li.about ul li:hover {
   align-items: center;
   justify-content: space-around;
   gap: 10px;
-
 }
-.splide__slide li{
-  width : 150px
+.splide__slide li {
+  width: 150px;
 }
- img {
-  width : 100%;
+img {
+  width: 100%;
 }
