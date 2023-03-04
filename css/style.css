@@ -191,6 +191,10 @@ header .container nav {
   justify-content: center;
   align-items: center;
 }
+.switch-lang {
+  background-color: #fff;
+  padding: 5px;
+}
 a[type="phone"] {
   padding: 10px;
   background-color: var(--main-color);
@@ -390,8 +394,8 @@ header .container nav ul li.about ul li:hover {
 .landing .texts h1 {
   color: var(--whiteColor);
   font-weight: bold;
+  margin: 0;
   font-size: 60px;
-  margin-bottom: 10px;
   letter-spacing: 10px;
   text-transform: uppercase;
 }
@@ -402,6 +406,12 @@ header .container nav ul li.about ul li:hover {
   color: var(--whiteColor);
   text-transform: capitalize;
   font-size: 17px;
+}
+.landing .texts p:last-of-type {
+  font-size: 12px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 @media (max-width: 768px) {
   .landing .texts h1 {
@@ -479,11 +489,11 @@ header .container nav ul li.about ul li:hover {
 .specilization .main-text {
   color: var(--whiteColor);
 }
-.specilization .box {
+/* .specilization .box {
   display: flex;
   align-items: center;
   overflow-x: scroll;
-}
+} */
 .specilization .box.active {
   flex-wrap: wrap;
   overflow: hidden;
@@ -498,8 +508,8 @@ header .container nav ul li.about ul li:hover {
   transition: var(--transition);
   min-width: 320px;
   height: 250px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+  /* margin-right: 20px;
+  margin-bottom: 10px; */
 }
 .specilization .box .content img {
   width: 100%;
@@ -559,14 +569,14 @@ header .container nav ul li.about ul li:hover {
     transform: scale(1);
   }
 }
-.specilization ul {
+.specilization .switcher {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   color: #fff;
 }
 @media (max-width: 767px) {
-  .specilization ul {
+  .specilization  .switcher {
     display: block;
   }
 }
@@ -596,6 +606,9 @@ header .container nav ul li.about ul li:hover {
     padding: 0px !important;
   }
 }
+/* .projects-slide li{
+  display: block;
+} */
 /*start our team*/
 .team {
   padding: 100px 0;
