@@ -190,7 +190,7 @@ header .container nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+gap: 10px;
 }
 .switch-lang {
   background-color: #fff;
@@ -597,7 +597,7 @@ header .container nav ul li.about ul li:hover {
 .specilization .box .content .text p {
   line-height: 1.5;
 }
-.specilization button {
+/* .specilization button {
   display: block;
   margin: 50px auto 0;
   padding: 10px 15px;
@@ -605,11 +605,14 @@ header .container nav ul li.about ul li:hover {
   border: none;
   color: #fff;
   font-weight: bold;
-}
+} */
 @media (max-width: 280px) {
   .specilization ul li {
     padding: 0px !important;
   }
+}
+#projects-slide {
+  position: relative;
 }
 /* .projects-slide li{
   display: block;
