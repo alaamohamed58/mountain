@@ -190,6 +190,7 @@ header .container nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .switch-lang {
   background-color: #fff;
@@ -308,12 +309,15 @@ header .container nav ul li.about ul li:hover {
   }
 }
 /*responsive header*/
-@media (min-width: 771px) {
+@media (min-width: 767px) {
+  header .container nav{
+    gap: 5px;
+  }
   header .container nav .toggle {
     display: none;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 767px) {
   header .container nav ul:not(li.about ul) {
     position: absolute;
     display: none;
@@ -329,6 +333,7 @@ header .container nav ul li.about ul li:hover {
   }
   header .container nav {
     order: -1;
+    
   }
   a[type="phone"] {
     margin-right: 20px;
