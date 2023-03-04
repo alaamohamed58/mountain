@@ -39,15 +39,7 @@ function hide(d) {
   d.classList.toggle("showen");
   document.body.classList.remove("unscrollable");
 }
-/*
-document.onclick = function (e){
-  if(e.target.tagName.toLowerCase() === 'img' && e.target !== document.querySelector('.floated > img')){
-    document.querySelector('.floated > img').src = e.target.src;
-    document.querySelector('.floated').classList.add('showen');
-    document.body.classList.add('unscrollable');
-  }
-}
-*/
+
 Array.from(document.querySelectorAll("#projects img")).forEach((e) => {
   e.addEventListener("click", (event) => {
     document.querySelector(".modal").style.display = "block";
@@ -55,13 +47,13 @@ Array.from(document.querySelectorAll("#projects img")).forEach((e) => {
   });
 });
 
-var close = document.querySelector(".modal .close");
+const close = document.querySelector(".modal .close");
 close.onclick = function () {
   document.querySelector(".modal").style.display = "none";
 };
 
 function ering(t, suc) {
-  var time = 3000;
+  const time = 3000;
   document.querySelector(".contact .container .one form p").innerHTML = t;
   document
     .querySelector(".contact .container .one form p")
@@ -179,20 +171,5 @@ for (i = 0; i < ourPartners.length; i++) {
   }
 }
 //specilization
-document
-  .querySelector(".specilization button")
-  .addEventListener("click", () => {
-    if (
-      !document
-        .querySelector(".specilization .box")
-        .classList.contains("active")
-    ) {
-      document.querySelector(".specilization .box").classList.add("active");
-      document.querySelector(".specilization button").textContent = "اخفاء";
-    } else {
-      document.querySelector(".specilization .box").classList.remove("active");
-      document.querySelector(".specilization button").textContent = "عرض الكل";
-    }
-  });
 
 //////////////////////////////
