@@ -1,535 +1,539 @@
 <!DOCTYPE html>
 <html lang="ar">
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, user-scalable=no"
-  />
-  <meta
-    name="description"
-    content="mountain for construction and project management"
-  />
-  <meta name="copyright" content="mountain-eg" />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/@splidejs/splide@3.0.7/dist/css/splide.min.css"
-  />
-  <link rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/custom.css" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta name="description" content="mountain for construction and project management" />
+<meta name="copyright" content="mountain-eg" />
+<link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.7/dist/css/splide.min.css" />
+<link rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/custom.css" />
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-  
-  <link
-    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
-    rel="stylesheet"
-  />
 
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-  ></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("amwzrqJgjrEPhX1k2");
-    })();
-  </script>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-  <title>Mountain</title>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/@splidejs/splide@3.0.7/dist/css/splide.min.css"
-  />
-  <style>
-    .splide__list li {
-      overflow: hidden;
-    }
-    li img {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("amwzrqJgjrEPhX1k2");
+  })();
+</script>
+
+<title>Mountain</title>
+<link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.7/dist/css/splide.min.css" />
+<style>
+  .splide__list li {
+    overflow: hidden;
+  }
+
+  li img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #chartdiv {
+    width: 100%;
+    height: 500px;
+  }
+</style>
 </head>
-  <body>
-    <div class="modal">
-      <div><img class="madal-content" /></div>
-      <span class="close">&times;</span>
-    </div>
-    <header dir="rtl">
-      <div class="container">
 
-       
-        <div class="logo">
-          <img src="images/logo/logo.png" alt="logo" />
-        </div>
+<body>
+  <div class="modal">
+    <div><img class="madal-content" /></div>
+    <span class="close">&times;</span>
+  </div>
+  <header dir="rtl">
+    <div class="container">
 
-        <nav>
-          <div class="switch-lang"><a href="https://mountain-eg.co/english">En</a> </div>
 
-          <span id="toggle" class="toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+      <div class="logo">
+        <img src="images/logo/logo.png" alt="logo" />
+      </div>
 
-          <a type="phone" href="tel:+2010000000">
-            <i class="fas fa-phone"></i> اتصل بنا</a
-          >
+      <nav>
+        <div class="switch-lang"><a href="https://mountain-eg.co/english">En</a> </div>
 
-          <ul id="links">
-            <!-- <li><a onclick="scrollto('header')">الرئيسية </a></li> -->
-            <li class="active">
-              <a onclick="scrollto('#services')">خدماتنا </a>
-            </li>
-            <li>
-              <a onclick="scrollto('#projects')">أعمالنا </a>
-            </li>
+        <span id="toggle" class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
 
-            <li class="about">
-              <a> عنا</a>
-              <ul>
-                <li><a onclick="scrollto('#about-company')">من نحن </a></li>
-                <li><a onclick="scrollto('#team')">تعرف علي فريق العمل</a></li>
-              </ul>
-            </li>
-            <li><a onclick="scrollto('#splide')">شركاؤنا </a></li>
-            <li><a onclick="scrollto('#send')">راسلنا </a></li>
-            <li><a onclick="scrollto('.location')">موقعنا </a></li>
-            <li><a onclick="scrollto('.footer')">مواعيد العمل </a></li>
-            <!-- <li>
+        <a type="phone" href="tel:+2010000000">
+          <i class="fas fa-phone"></i> اتصل بنا</a>
+
+        <ul id="links">
+          <!-- <li><a onclick="scrollto('header')">الرئيسية </a></li> -->
+          <li class="active">
+            <a onclick="scrollto('#services')">خدماتنا </a>
+          </li>
+          <li>
+            <a onclick="scrollto('#projects')">أعمالنا </a>
+          </li>
+
+          <li class="about">
+            <a> عنا</a>
+            <ul>
+              <li><a onclick="scrollto('#about-company')">من نحن </a></li>
+              <li><a onclick="scrollto('#team')">تعرف علي فريق العمل</a></li>
+            </ul>
+          </li>
+          <li><a onclick="scrollto('#splide')">شركاؤنا </a></li>
+          <li><a onclick="scrollto('#send')">راسلنا </a></li>
+          <li><a onclick="scrollto('.location')">موقعنا </a></li>
+          <li><a onclick="scrollto('.footer')">مواعيد العمل </a></li>
+          <!-- <li>
               <a href="findJob.html" onclick="scrollto('#sen d')">
                 وظائق متاحة
               </a>
             </li> -->
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="landing">
-      
-      <img src="/images/restaurants/beef bar/Beefbar-Egypt_Archi-uai-1032x773.jpg" class="showen" alt="beef-bar" />
-      <img src="/images/restaurants/brgr/brgr.jpeg" class="showen" alt="brgr" />
-      <img src="/images/restaurants/GIGI/S_MG_1174-HDR-f6d17453-b19e-4226-9e7d-2bce11de9618.jpeg" class="showen" alt="gigi" />
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="landing">
 
-      <div class="texts">
-        <h1><span>M</span>ountain</h1>
-        <p>للانشاءات</p>
-        <p>quality on time</p>
-      </div>
+    <img src="/images/restaurants/beef bar/Beefbar-Egypt_Archi-uai-1032x773.jpg" class="showen" alt="beef-bar" />
+    <img src="/images/restaurants/brgr/brgr.jpeg" class="showen" alt="brgr" />
+    <img src="/images/restaurants/GIGI/S_MG_1174-HDR-f6d17453-b19e-4226-9e7d-2bce11de9618.jpeg" class="showen"
+      alt="gigi" />
 
-      <i onclick="slider('to')" class="fa fa-chevron-left to"></i>
-      <i onclick="slider('from')" class="fa fa-chevron-right from"></i>
+    <div class="texts">
+      <h1><span>M</span>ountain</h1>
+      <p>للانشاءات</p>
+      <p>quality on time</p>
     </div>
 
-        <!--start services-->
-        <div id="services" class="services">
-          <div class="texts">
-            <h1>أكتشف خدماتنا</h1>
-    
-            <a onclick="scrollto('#work', -100)">
-              <i class="fas fa-angle-double-down"></i
-            ></a>
-          </div>
-        </div>
-        <!--start our work-->
-        <div id="work" class="work"  dir="rtl">
-          <div class="container">
-            <div class="box">
-              <div class="content">
-                <span>
-                  <i class="fas fa-building"></i>
-                </span>
-    
-                <h3> تصميم الهيكل والتخطيط</h3>
-                <p>
-                  يمكن تقديم خدمات تصميم الهيكل والتخطيط للمشروعات الإنشائية، بما في ذلك تصميم الرسومات والمخططات والتصميم الهيكلي للمباني والمنشآت.
-                </p>
-              </div>
-              <div class="content">
-                <span>
-                  <i class="fas fa-people-carry"></i>
-                </span>
-    
-                <h3>ادارة المشاريع 
-                </h3>
-                <p>
-                  يمكن للشركة تقديم خدمات إدارة المشاريع، بما في ذلك التخطيط والتنظيم والإشراف على تنفيذ المشروعات الإنشائية.
-                </p>
-              </div>
-              <div class="content">
-                <span>
-                  <i class="fas fa-laptop-house"></i>
-                </span>
-    
-                <h3>تنفيذ الأعمال الإنشائية
-                </h3>
-                <p>
-                  يمكن للشركة تنفيذ الأعمال الإنشائية المختلفة، بما في ذلك الأعمال الإنشائية العامة والخاصة والتشطيبات الداخلية والخارجية.
-                </p>
-              </div>
-              <div class="content">
-                <span>
-                  <i class="fas fa-hands-helping"></i>
-                </span>
-    
-                <h3>الصيانة والإصلاح
-                </h3>
-                <p>
-                  يمكن للشركة تقديم خدمات الصيانة والإصلاح للمنشآت الإنشائية، بما في ذلك الصيانة الدورية وإصلاح الأعطال وتركيب الأنظمة الجديدة.
+    <i onclick="slider('to')" class="fa fa-chevron-left to"></i>
+    <i onclick="slider('from')" class="fa fa-chevron-right from"></i>
+  </div>
 
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--start gallery-->
-        <div id="projects" class="specilization" dir="ltr">
-          <div class="container">
-            <h2 class="main-text" data="مشروعات">أخر مشروعات الشركة</h2>
-            <ul class="switcher" dir="rtl">
-              <li class="active" data-work=".all">الكل</li>
-              <li data-work=".theaters">حفلات</li>
-              <li data-work=".restaurants">مطاعم</li>
-              <li data-work=".festivals">أفراح</li>
-              <li data-work=".hospitals">مستشفيات</li>
-              <li data-work=".ghona">مهرجانات</li>
-            </ul>
-    
-            <div class="box" id="projects-slide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="content all restaurants splide__slide">
-                    <img
-                      src="images/restaurants/beef bar/beefbar-egypt-night-uai-516x386.jpg"
-                      alt="beef-bar"
-                    />
-                  </li>
-        
-                  <li class="content all restaurants splide__slide">
-                    <img
-                      src="images/restaurants/beef bar/Beefbar-Egypt_Archi-uai-1032x773.jpg"
-                      alt="beef-bar"
-                    />
-                  </li>
-                  <li class="content all restaurants splide__slide">
-                    <img src="images/restaurants/grecco.jpg" alt="beef-bar" />
-                  </li>
-        
-                  <li class="content all restaurants splide__slide">
-                    <img
-                      src="images/restaurants/mariolino/mariolino.jpeg"
-                      alt="beef-bar"
-                    />
-                  </li>
-                  <li class="content all restaurants splide__slide">
-                    <img
-                      src="images/restaurants/mariolino/mariolinwo.jpeg"
-                      alt="beef-bar"
-                    />
-                  </li>
-                  <li class="content all restaurants splide__slide">
-                    <img src="images/restaurants/scalini/1.gif" alt="beef-bar" />
-                  </li>
-                  <li class="content all restaurants splide__slide">
-                    <img src="images/restaurants/scalini/4.gif" alt="beef-bar" />
-                  </li>
-        
-                  <li class="content all restaurants splide__slide">
-                    <img src="images/restaurants/scalini/scalini.gif" alt="beef-bar" />
-                  </li>
-                  <li class="content all restaurants splide__slide">
-                    <img src="images/restaurants/brgr/brgr.jpeg" alt="beef-bar" />
-                  </li>
-    
-                  <li class="content all restaurants splide__slide">
-                    <img src="images/restaurants/brgr/brgr2.jpeg" alt="beef-bar" />
-                  </li>  
-                  
-                  <li class="content all restaurants splide__slide">
-                    <img src="images/restaurants/brgr/brgr3.jpeg" alt="beef-bar" />
-                  </li>
-    
-  
-                  <li class="content all restaurants splide__slide">
-                    <img src="images/restaurants/chringuito.jpg" alt="beef-bar" />
-                  </li>
-    
-                  <li class="content all theaters splide__slide">
-                    <img src="images/theaters/AHM Sahel.png" alt="" />
-                  </li>
+  <!--start services-->
+  <div id="services" class="services">
+    <div class="texts">
+      <h1>أكتشف خدماتنا</h1>
 
-        
-            
-                </ul>
-              </div>
-            </div>
-          
-          </div>
-        </div>
-        <!--start about us-->
-        <div id="about-company" class="about-company">
-          <div class="container" dir="rtl">
-            <h2>من نحن ؟</h2>
-            <div class="text">
-              <p>
-                تهدف الشركة لتكون الرائدة في مجال التشطيبات والخدمات الصناعية
-                والمقاولات الكهروميكانيكية والإنشاءات المعدنية
-              </p>
-            </div>
-            <div class="logo">
-              <img src="images/logo/logo_2-removebg-preview.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!--start our team-->
-        <div id="team" class="team">
-          <div class="container">
-            <h2 class="main-text" data="الفريق">فريق العمل</h2>
-            <div class="box">
-              <div class="content">
-                <p>تضم الشركة فريق من المهندسين ومديرى مشاريع وحرفين على مستوى من الخبرة لسنوات ملتزمين بتقديم أعلى جودة في جميع المشروعات </p>
-                <div class="img-content">
-                  <img
-                    src="images/real/general-manager.jpeg"
-                    alt="mountain-manager"
-                  />
-                </div>
-                <div class="texts">
-                  <span>Director-General</span>
-                  <h3>م/ مصطفي السمان</h3>
-                </div>
-                <div class="icons">
-                  <!-- <a href="https://www.facebook.com/" target="_blank"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a> -->
-                  <a type="email" href="mailto:alsaman@mountain-eg.com">
-                    <i class="fab fa-google"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="splide" class="splide">
-          <h2>شركاؤنا في النجاح <i class="far fa-handshake"></i></h2>
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="/images/partners/243323_LA7-page-a-d-.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/ahly-sabour.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/ahm_club.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/alchemy.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/Aramex_logo_0.svg" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/beanos.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/beefbar.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/brgr.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/eatry.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/ecg.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/gigi.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/grecco.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/HM CLUB.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/orascom.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/otto.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/pus.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/saudi-german.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/scalini.jpg" />
-              </li>   <li class="splide__slide">
-                <img src="/images/partners/seashell.jpg" />
-              </li>   <li class="splide__slide">
-                <img src="/images/partners/seashell_playa.png" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/tourbay.jpeg" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/partners/venture.png" />
-              </li>
-            </ul>
-          </div>
-        </div>
- <!--start contact-->
- <div id="send" class="contact" dir="rtl">
-  <div class="container">
-    <div class="col one">
-      <h2>يمكننا استقبال اسألتك في أي وقت</h2>
-
-      <form  dir="rtl">
-        <input id="client_name" type="text" required placeholder="الأسم" />
-        <input
-          id="client_number"
-          type="number"
-          required
-          placeholder=" رقم الهاتف"
-        />
-        <textarea
-          id="client_msg"
-          style="resize: none"
-          placeholder="رسالتك"
-          required
-        ></textarea>
-        <button type="submit">ارسال</button>
-      </form>
+      <a onclick="scrollto('#work', -100)">
+        <i class="fas fa-angle-double-down"></i></a>
     </div>
   </div>
-</div>
-    <div class="location">
-      <div class="container">
-        <div class="text">
-          <h2>
-            يمكنك استكشاف موقعنا عبر خرائط جوجل
-            <i style="color: #de0f0f" class="fas fa-map-marked-alt"></i>
-          </h2>
-          <address>
-            <i class="fas fa-map-marker-alt"></i>
-            مدينة نصر, حي السفارات
-          </address>
+  <!--start our work-->
+  <div id="work" class="work" dir="rtl">
+    <div class="container">
+      <div class="box">
+        <div class="content">
+          <span>
+            <i class="fas fa-building"></i>
+          </span>
+
+          <h3> تصميم الهيكل والتخطيط</h3>
+          <p>
+            يمكن تقديم خدمات تصميم الهيكل والتخطيط للمشروعات الإنشائية، بما في ذلك تصميم الرسومات والمخططات والتصميم
+            الهيكلي للمباني والمنشآت.
+          </p>
         </div>
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe
-              width="100%"
-              height="510"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=Al Manteqah Ath Thamenah, Nasr City, Cairo Governorate 4441306&t=&z=10&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe
-            ><a href="https://2yu.co">2yu</a><br />
+        <div class="content">
+          <span>
+            <i class="fas fa-people-carry"></i>
+          </span>
 
-            ><a href="https://embedgooglemap.2yu.co">html embed google map</a>
-          </div>
-          <style>
-            .mapouter {
-              position: relative;
-              text-align: right;
-              height: 400px;
-            }
+          <h3>ادارة المشاريع
+          </h3>
+          <p>
+            يمكن للشركة تقديم خدمات إدارة المشاريع، بما في ذلك التخطيط والتنظيم والإشراف على تنفيذ المشروعات الإنشائية.
+          </p>
+        </div>
+        <div class="content">
+          <span>
+            <i class="fas fa-laptop-house"></i>
+          </span>
 
-            .gmap_canvas {
-              overflow: hidden;
-              background: none !important;
-              height: 400px;
-            }
+          <h3>تنفيذ الأعمال الإنشائية
+          </h3>
+          <p>
+            يمكن للشركة تنفيذ الأعمال الإنشائية المختلفة، بما في ذلك الأعمال الإنشائية العامة والخاصة والتشطيبات
+            الداخلية والخارجية.
+          </p>
+        </div>
+        <div class="content">
+          <span>
+            <i class="fas fa-hands-helping"></i>
+          </span>
 
-            .gmap_iframe {
-              width: 100% !important;
-              height: 400px !important;
-            }
-          </style>
+          <h3>الصيانة والإصلاح
+          </h3>
+          <p>
+            يمكن للشركة تقديم خدمات الصيانة والإصلاح للمنشآت الإنشائية، بما في ذلك الصيانة الدورية وإصلاح الأعطال وتركيب
+            الأنظمة الجديدة.
+
+          </p>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="container">
-        <div class="col-one">
+  </div>
+  <!--start gallery-->
+  <div id="projects" class="specilization" dir="ltr">
+    <div class="container">
+      <h2 class="main-text" data="مشروعات">أخر مشروعات الشركة</h2>
+      <ul class="switcher" dir="rtl">
+        <li class="active" data-work=".all">الكل</li>
+        <li data-work=".theaters">حفلات</li>
+        <li data-work=".restaurants">مطاعم</li>
+        <li data-work=".festivals">أفراح</li>
+        <li data-work=".hospitals">مستشفيات</li>
+        <li data-work=".ghona">مهرجانات</li>
+      </ul>
+
+      <div class="box" id="projects-slide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/beef bar/beefbar-egypt-night-uai-516x386.jpg" alt="beef-bar" />
+            </li>
+
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/beef bar/Beefbar-Egypt_Archi-uai-1032x773.jpg" alt="beef-bar" />
+            </li>
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/grecco.jpg" alt="beef-bar" />
+            </li>
+
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/mariolino/mariolino.jpeg" alt="beef-bar" />
+            </li>
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/mariolino/mariolinwo.jpeg" alt="beef-bar" />
+            </li>
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/scalini/1.gif" alt="beef-bar" />
+            </li>
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/scalini/4.gif" alt="beef-bar" />
+            </li>
+
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/scalini/scalini.gif" alt="beef-bar" />
+            </li>
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/brgr/brgr.jpeg" alt="beef-bar" />
+            </li>
+
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/brgr/brgr2.jpeg" alt="beef-bar" />
+            </li>
+
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/brgr/brgr3.jpeg" alt="beef-bar" />
+            </li>
+
+
+            <li class="content all restaurants splide__slide">
+              <img src="images/restaurants/chringuito.jpg" alt="beef-bar" />
+            </li>
+
+            <li class="content all theaters splide__slide">
+              <img src="images/theaters/AHM Sahel.png" alt="" />
+            </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--start about us-->
+  <div id="about-company" class="about-company">
+    <div class="container" dir="rtl">
+      <h2>من نحن ؟</h2>
+      <div class="text">
+        <p>
+          تهدف الشركة لتكون الرائدة في مجال التشطيبات والخدمات الصناعية
+          والمقاولات الكهروميكانيكية والإنشاءات المعدنية
+        </p>
+      </div>
+      <div class="logo">
+        <img src="images/logo/logo_2-removebg-preview.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- work force  -->
+
+  <div id="work-force">
+
+    <div class="container">
+
+      <h2 class="main-text">القوة العاملة <i class="fa-solid fa-helmet-safety"></i></h2>
+
+      <div id="chartdiv"></div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--start our team-->
+  <div id="team" class="team">
+    <div class="container">
+      <h2 class="main-text" data="الفريق">فريق العمل</h2>
+      <div class="box">
+        <div class="content">
+          <p>تضم الشركة فريق من المهندسين ومديرى مشاريع وحرفين على مستوى من الخبرة لسنوات ملتزمين بتقديم أعلى جودة في
+            جميع المشروعات </p>
+          <div class="img-content">
+            <img src="images/real/general-manager.jpeg" alt="mountain-manager" />
+          </div>
           <div class="texts">
-            <h2>مواعيد العمل</h2>
-            <strong> يوميا ما عدا يوم الجمعه</strong>
-            <p>9:00 AM - 6:00 PM</p>
+            <span>Director-General</span>
+            <h3>م/ مصطفي السمان</h3>
+          </div>
+          <div class="icons">
+            <!-- <a href="https://www.facebook.com/" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a> -->
+            <a type="email" href="mailto:alsaman@mountain-eg.com">
+              <i class="fab fa-google"></i></a>
           </div>
         </div>
-        <div class="social">
-          <div class="gmail">
-            <a type="email" href="mailto: alsamana@mounta-eg.com">
-              <i class="fab fa-google"></i> alsaman@mounta-eg.com
-            </a>
-          </div>
-          <!-- <div class="WhatsApp" target="_blank">
+      </div>
+    </div>
+  </div>
+  <div id="splide" class="splide">
+    <h2>شركاؤنا في النجاح <i class="far fa-handshake"></i></h2>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="/images/partners/243323_LA7-page-a-d-.jpg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/ahly-sabour.jpg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/ahm_club.jpg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/alchemy.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/Aramex_logo_0.svg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/beanos.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/beefbar.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/brgr.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/eatry.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/ecg.jpg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/gigi.jpg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/grecco.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/HM CLUB.jpg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/orascom.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/otto.jpg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/pus.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/saudi-german.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/scalini.jpg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/seashell.jpg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/seashell_playa.png" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/tourbay.jpeg" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/partners/venture.png" />
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--start contact-->
+  <div id="send" class="contact" dir="rtl">
+    <div class="container">
+      <div class="col one">
+        <h2>يمكننا استقبال اسألتك في أي وقت</h2>
+
+        <form dir="rtl">
+          <input id="client_name" type="text" required placeholder="الأسم" />
+          <input id="client_number" type="number" required placeholder=" رقم الهاتف" />
+          <textarea id="client_msg" style="resize: none" placeholder="رسالتك" required></textarea>
+          <button type="submit">ارسال</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="location">
+    <div class="container">
+      <div class="text">
+        <h2>
+          يمكنك استكشاف موقعنا عبر خرائط جوجل
+          <i style="color: #de0f0f" class="fas fa-map-marked-alt"></i>
+        </h2>
+        <address>
+          <i class="fas fa-map-marker-alt"></i>
+          مدينة نصر, حي السفارات
+        </address>
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="100%" height="510" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Al Manteqah Ath Thamenah, Nasr City, Cairo Governorate 4441306&t=&z=10&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+            href="https://2yu.co">2yu</a><br />
+
+          ><a href="https://embedgooglemap.2yu.co">html embed google map</a>
+        </div>
+        <style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 400px;
+          }
+
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 400px;
+          }
+
+          .gmap_iframe {
+            width: 100% !important;
+            height: 400px !important;
+          }
+        </style>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="col-one">
+        <div class="texts">
+          <h2>مواعيد العمل</h2>
+          <strong> يوميا ما عدا يوم الجمعه</strong>
+          <p>9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="gmail">
+          <a type="email" href="mailto: alsamana@mounta-eg.com">
+            <i class="fab fa-google"></i> alsaman@mounta-eg.com
+          </a>
+        </div>
+        <!-- <div class="WhatsApp" target="_blank">
             <a href="#"><i class="fab fa-whatsapp"></i> +201121201111 </a>
           </div> -->
-          <div class="instagram">
-            <a
-              href="https://www.instagram.com/mountain_for_construction/"
-              target="_blank"
-            >
-              <i class="fab fa-instagram"></i> mountain.projects</a
-            >
-          </div>
-          <div class="phone">
-            <a href="tel:+201032971700">
-              <i class="fas fa-phone"></i> +201121201111</a
-            >
-          </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/mountain_for_construction/" target="_blank">
+            <i class="fab fa-instagram"></i> mountain.projects</a>
+        </div>
+        <div class="phone">
+          <a href="tel:+201032971700">
+            <i class="fas fa-phone"></i> +201121201111</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="floated">
-      <div onclick="hide(this.parentElement)"></div>
-      <img src="images/intrl117_View08-copy.jpg" alt="" />
-    </div>
-    <script src="https://unpkg.com/@splidejs/splide@3.0.7/dist/js/splide.min.js"></script>
-    <script>
-      val = setInterval(() => {
-            if (isPause) {
-                return false;
-            }
-    
-            slider();
-        }, 2500);
-      const splide = new Splide(".splide", {
-        type: "loop",
-        drag: "free",
-        focus: "center",
-        perPage: 5,
-        pagination: false,
-        autoplay: true, // To enable the autoplay feature
-        interval: 2000, // To
-      });
+  <div class="floated">
+    <div onclick="hide(this.parentElement)"></div>
+    <img src="images/intrl117_View08-copy.jpg" alt="" />
+  </div>
+  <script src="https://unpkg.com/@splidejs/splide@3.0.7/dist/js/splide.min.js"></script>
+  <script>
+    val = setInterval(() => {
+      if (isPause) {
+        return false;
+      }
 
-      splide.mount();
+      slider();
+    }, 2500);
+    const splide = new Splide(".splide", {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 5,
+      pagination: false,
+      autoplay: true, // To enable the autoplay feature
+      interval: 2000, // To
+    });
 
-      //projects 
-      const projectsContent = document.querySelectorAll("#projects-slide ul li")
+    splide.mount();
 
-
-const arrOfItems = [...projectsContent];
-
-//switchers
+    //projects 
+    const projectsContent = document.querySelectorAll("#projects-slide ul li")
 
 
-const projects = new Splide("#projects-slide", {
+    const arrOfItems = [...projectsContent];
+
+    //switchers
+
+
+    const projects = new Splide("#projects-slide", {
       type: "loop",
       drag: "free",
       focus: "center",
@@ -537,8 +541,295 @@ const projects = new Splide("#projects-slide", {
       pagination: false,
     });
     projects.mount();
-    </script>
-      <script src="js/scipt.js"></script>
-      <script src="js/email.js"></script>
-  </body>
+  </script>
+  <script src="js/scipt.js"></script>
+  <script src="js/email.js"></script>
+
+  <!-- pie charts  -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+
+  <script>
+    // Create the chart
+    Highcharts.chart('chartdiv', {
+      chart: {
+        type: 'pie'
+      },
+      title: {
+        text: 'القهوة العاملة في شركتنا تتمثل في',
+        align: 'right'
+      },
+      // subtitle: {
+      //   text: 'Click the slices to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>',
+      //   align: 'left'
+      // },
+
+      accessibility: {
+        announceNewData: {
+          enabled: true
+        },
+        point: {
+          valueSuffix: '%',
+        }
+      },
+
+      plotOptions: {
+        series: {
+          dataLabels: {
+            enabled: true,
+            format: ' {point.y:.1f}% : {point.name}',
+
+          }
+        }
+      },
+
+      // tooltip: {
+      //   headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+      //   pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+      // },
+
+      series: [
+        {
+          name: 'WorkForce',
+          colorByPoint: true,
+          data: [
+            {
+              name: 'المعماريين',
+              y: 30,
+
+            },
+            {
+              name: 'المعماريين',
+              y: 40,
+            },
+            {
+              name: 'اليومية',
+              y: 20,
+            },
+            {
+              name: 'الكهروميكانيكية',
+              y: 100,
+            },
+            {
+              name: 'أخرون',
+              y: 16,
+            }
+          ]
+        }
+      ],
+      drilldown: {
+        series: [
+          {
+            name: 'Chrome',
+            id: 'Chrome',
+            data: [
+              [
+                'v97.0',
+                36.89
+              ],
+              [
+                'v96.0',
+                18.16
+              ],
+              [
+                'v95.0',
+                0.54
+              ],
+              [
+                'v94.0',
+                0.7
+              ],
+              [
+                'v93.0',
+                0.8
+              ],
+              [
+                'v92.0',
+                0.41
+              ],
+              [
+                'v91.0',
+                0.31
+              ],
+              [
+                'v90.0',
+                0.13
+              ],
+              [
+                'v89.0',
+                0.14
+              ],
+              [
+                'v88.0',
+                0.1
+              ],
+              [
+                'v87.0',
+                0.35
+              ],
+              [
+                'v86.0',
+                0.17
+              ],
+              [
+                'v85.0',
+                0.18
+              ],
+              [
+                'v84.0',
+                0.17
+              ],
+              [
+                'v83.0',
+                0.21
+              ],
+              [
+                'v81.0',
+                0.1
+              ],
+              [
+                'v80.0',
+                0.16
+              ],
+              [
+                'v79.0',
+                0.43
+              ],
+              [
+                'v78.0',
+                0.11
+              ],
+              [
+                'v76.0',
+                0.16
+              ],
+              [
+                'v75.0',
+                0.15
+              ],
+              [
+                'v72.0',
+                0.14
+              ],
+              [
+                'v70.0',
+                0.11
+              ],
+              [
+                'v69.0',
+                0.13
+              ],
+              [
+                'v56.0',
+                0.12
+              ],
+              [
+                'v49.0',
+                0.17
+              ]
+            ]
+          },
+          {
+            name: 'Safari',
+            id: 'Safari',
+            data: [
+              [
+                'v15.3',
+                0.1
+              ],
+              [
+                'v15.2',
+                2.01
+              ],
+              [
+                'v15.1',
+                2.29
+              ],
+              [
+                'v15.0',
+                0.49
+              ],
+              [
+                'v14.1',
+                2.48
+              ],
+              [
+                'v14.0',
+                0.64
+              ],
+              [
+                'v13.1',
+                1.17
+              ],
+              [
+                'v13.0',
+                0.13
+              ],
+              [
+                'v12.1',
+                0.16
+              ]
+            ]
+          },
+          {
+            name: 'Edge',
+            id: 'Edge',
+            data: [
+              [
+                'v97',
+                6.62
+              ],
+              [
+                'v96',
+                2.55
+              ],
+              [
+                'v95',
+                0.15
+              ]
+            ]
+          },
+          {
+            name: 'Firefox',
+            id: 'Firefox',
+            data: [
+              [
+                'v96.0',
+                4.17
+              ],
+              [
+                'v95.0',
+                3.33
+              ],
+              [
+                'v94.0',
+                0.11
+              ],
+              [
+                'v91.0',
+                0.23
+              ],
+              [
+                'v78.0',
+                0.16
+              ],
+              [
+                'v52.0',
+                0.15
+              ]
+            ]
+          }
+        ]
+      }
+    });
+    document.querySelector(".highcharts-exporting-group").remove()
+
+  </script>
+</body>
+
 </html>
