@@ -486,6 +486,11 @@ header .container nav ul li.about ul li:hover {
     width: 200px;
   }
 }
+
+#work-force {
+  padding: 60px 0; 
+  background-color: #dcdcf1;
+}
 /*start specilization*/
 .specilization {
   padding: 60px 0 30px;
