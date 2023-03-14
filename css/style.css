@@ -631,6 +631,9 @@ header .container nav ul li.about ul li:hover {
 .team .container h2 {
   color: var(--whiteColor);
 }
+.team .container p {
+  color: #ddd;
+}
 .team .container .box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
